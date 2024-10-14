@@ -1,0 +1,11 @@
+Choose a dessert: Cake
+Choose a drink:
+- Wine
+- Beer
+Choose a main dish:
+- Salad
+- Pasta
+Choose toppings for your dish (select multiple, separated by commas): Cheese
+Please confirm your order.: dor
+Would you like dessert?: 'Yes'
+Would you like to add a drink?: 'Yes'

@@ -1,0 +1,18 @@
+{
+  "Choose a main dish": "Pizza",
+  "Choose toppings for your dish (select multiple, separated by commas)": [
+    "Cheese",
+    "Peppers"
+  ],
+  "Would you like to add a drink?": "Yes",
+  "Choose a drink": [
+    "Coke",
+    "Wine"
+  ],
+  "Would you like dessert?": "Yes",
+  "Choose a dessert": [
+    "Cake",
+    "Fruit Salad"
+  ],
+  "Please confirm your order.": "dor"
+}

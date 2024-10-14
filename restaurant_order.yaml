@@ -1,0 +1,24 @@
+- question: "Choose a main dish"
+  options: ["Pizza", "Hamburger", "Pasta", "Salad"]
+
+- question: "Choose toppings for your dish (select multiple, separated by commas)"
+  options: ["Olives", "Onions", "Tomatoes", "Peppers", "Cheese"]
+
+- question: "Would you like to add a drink?"
+  options: ["Yes", "No"]
+
+- question: "Choose a drink"
+  options: ["Water", "Soda", "Juice", "Wine", "Beer", "Coke"]
+  condition: "Would you like to add a drink?"
+
+- question: "How many drinks would you like?"
+  condition: ""
+
+- question: "Would you like dessert?"
+  options: ["Yes", "No"]
+
+- question: "Choose a dessert"
+  options: ["Ice Cream", "Cake", "Fruit Salad"]
+  condition: "Would you like dessert?"
+
+- question: "Please confirm your order."
