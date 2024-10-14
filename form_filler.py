@@ -25,7 +25,7 @@ def get_valid_input(question, options=None):
         return input(f"{question}: ").strip()  # For questions without predefined options
 
 def fill_form(questions):
-    answers = {}  # Dictionary to store the answers
+    answers = {}  # Dictionary to store user answers
     for question in questions:
         # Get the question text
         q_text = question['question']
@@ -35,7 +35,7 @@ def fill_form(questions):
         if 'condition' in question:
             condition_question = question['condition']
             if answers.get(condition_question) != "Yes":
-                # Skip this question if the condition is not met
+                # Skip this question if the condition is not met (i.e., user did not choose "Yes")
                 continue
 
         # Get user input while ensuring it's valid
@@ -44,7 +44,12 @@ def fill_form(questions):
         else:
             answer = get_valid_input(q_text)
 
-        answers[q_text] = answer  # Store the user's answer
+        # Store unique options if the question allows multiple selections
+        if isinstance(answer, list):
+            unique_answers = set(answer)  # Use a set to avoid duplicates
+            answers[q_text] = list(unique_answers)  # Convert back to a list
+        else:
+            answers[q_text] = answer  # Store the answer directly for single options
 
         # Handle the case where the user wants to specify how many drinks
         if q_text == "How many drinks would you like?":
