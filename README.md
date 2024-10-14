@@ -26,3 +26,8 @@ This program allows users to import forms in JSON or YAML format, fill them out 
 To run the program, execute the following command in your terminal:
 ```bash
 python form_component.py
+```
+Choose the menu restaurant yaml file:
+```bash
+restaurant_order.yaml
+```
